@@ -220,7 +220,6 @@ def update():
 if __name__ == '__main__':
     cli()
 
-    
 
 @cli.command(
     'update-from-template',
