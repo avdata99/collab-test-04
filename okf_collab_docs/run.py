@@ -198,6 +198,7 @@ def serve(port):
         print(f"serving at http://localhost:{port}")
         httpd.serve_forever()
 
+
 @cli.command(
     'update-from-template',
     short_help='Get latest changes from upstream template'
