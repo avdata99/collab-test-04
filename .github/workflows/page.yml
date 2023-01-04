@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # ENSURE conf/mkdocs-en.yml is the last one here
           # Automatically updated, commit and do not change
-          CONFIG_FILES: conf/mkdocs-es.yml conf/mkdocs-en.yml
+          CONFIG_FILES: conf/mkdocs-es.yml conf/mkdocs-fr.yml conf/mkdocs-en.yml
           # EXTRA_PACKAGES is for the apk add command of Alpine Linux before running pip install
           EXTRA_PACKAGES: |
             build-base libxml2-dev libxslt-dev libffi-dev gcc musl-dev libgcc

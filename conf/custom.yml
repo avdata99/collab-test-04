@@ -2,45 +2,27 @@
 
 # Site names for each languages defines which languages are available
 site_name:
-    en: My site name
-    es: Mi sitio
+    en: Collab test 04
+    es: Mi test 04
+    fr: Mon test 04
 
-# custom_site_url is only required for custom URL (like https://your_site.org)
-# If you plan to use GitHub domain (like https://USER.github.io/YOU-REPO-NAME), leave it commented
-# custom_site_url: https://your-custom-domain.org
-
-# repo_user and repo_name came from the GitHub repository url: https://github.com/REPO_USER/REPO_NAME
-repo_user: okfn
-repo_name: okfn-collaborative-docs
-
-# Only if you need it for custom path at your domain
-# public_url_base_path: /some-folder
+repo_user: avdata99
+repo_name: collab-test-04
 
 site_description: 
-  en: |
-    This is the site description
-    (a test version)
-  es: |
-    Esta es la descripción
-    del sitio
+  en: En description
+  es: Es descripcion
+  fr: Fr description
 
 site_author:
     en: Me me@okfn.org
     es: Yo yo@okfn.org
+    fr: Moi moi@okfn.org
 
 copyright:
-    en: | 
-        Creative commons BY-SA.
-        No rigths reserved @okfn
-    es: |
-        Creative commons BY-SA.
-        Sin derechos reservados @okfn
-
-
-# Environment variables available for all md or HTML files
-# They are the same for all languages. Feel free to use
-# values like "- some_en_var: XX" + "- some_es_var: XX" to define 
-# different values for each language
+    en: EN Creative commons BY-SA.
+    es: ES Creativos commons BY-SA.
+    fr: FR Creative commons BY-SA.
 
 custom_extra:
   # define all available languages
@@ -49,6 +31,8 @@ custom_extra:
       lang: en
     - name: Español
       lang: es
+    - name: Français
+      lang: fr
   test_var: "This is a test variable accessible as {{ test_var }}"
   test_complex_obj:
     test_var2: "This is a test variable accessible as {{ test_complex_obj.test_var }}"
@@ -76,3 +60,6 @@ nav:
           - Licencia: acerca-de/licencia.md
       - Pagina de prubas: pagina-pruebas.md
       - Reportar errores: https://github.com/okfn/okfn-collaborative-docs/issues
+
+  nav-fr:
+      - ini fr: index.md
