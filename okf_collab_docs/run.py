@@ -198,6 +198,29 @@ def serve(port):
         print(f"serving at http://localhost:{port}")
         httpd.serve_forever()
 
+@cli.command(
+    'update-from-template',
+    short_help='Get latest changes from upstream template'
+)
+def update():
+    """ Get changes from base template """
+
+    #Local repo on your computer
+    repo = git.Repo('.')
+    # Create a remote to template upstream repo (if not exists)
+    try:
+        upstream = repo.create_remote('upstream', 'git@github.com:okfn/okfn-collaborative-docs.git')
+    except git.exc.GitCommandError:
+        upstream = repo.remote('upstream')
+    upstream.fetch()
+    cmd = repo.git
+    cmd.rebase('-Xours', 'upstream/main')
+
+
+if __name__ == '__main__':
+    cli()
+
+    
 
 @cli.command(
     'update-from-template',
