@@ -217,10 +217,6 @@ def update():
     cmd.rebase('-Xours', 'upstream/main')
 
 
-if __name__ == '__main__':
-    cli()
-
-
 @cli.command(
     'update-from-template',
     short_help='Get latest changes from upstream template'
